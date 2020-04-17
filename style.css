@@ -1,16 +1,18 @@
 .breath {
   border-radius: 100%;
-  background-color: cornflowerblue; 
+  background-color: #B8D1FF; 
   width: 100px;
   height: 100px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .breathe-in {
   animation-name: inhale;
-  animation-duration: 4s;
-  animation-delay: 2s;
+  animation-duration: 16s;
   animation-timing-function: linear; 
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-iteration-count: infinite;
   animation-fill-mode: none;
   animation-play-state: running;
@@ -24,21 +26,17 @@
     height: 100px; 
     background-color: #B8D1FF;
   }
-  25% {
-    width: 150px;
-    height: 150px; 
-  }
-  50% {
-    width: 200px;
-    height: 200px; 
+  25%, 50% {
+    width: 300px;
+    height: 300px;
   }
   75% {
-    width: 250px;
-    height: 250px; 
+    width: 100px;
+    height: 100px; 
   }
   100% {
-    width: 300px;
-    height: 300px; 
+    width: 100px;
+    height: 100px; 
     background-color: #6495ED;
   }
 }
