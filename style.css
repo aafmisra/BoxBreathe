@@ -1,8 +1,8 @@
 .breath {
   border-radius: 100%;
-  background-color: #B8D1FF; 
+  background-color: #b8d1ff;
   width: 100px;
-  height: 100px; 
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,31 +11,98 @@
 .breathing {
   animation-name: breathe;
   animation-duration: 16s;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
   animation-direction: normal;
   animation-iteration-count: infinite;
   animation-fill-mode: none;
   animation-play-state: running;
 }
 
+.in {
+  animation-name: inhale;
+  animation-duration: 16s;
+  animation-timing-function: step-start;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.hold {
+  animation-name: hold;
+  animation-duration: 16s;
+  animation-timing-function: step-start;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.out {
+  animation-name: exhale;
+  animation-duration: 16s;
+  animation-timing-function: step-start;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
 
 @keyframes breathe {
   0% {
     width: 100px;
-    height: 100px; 
-    background-color: #B8D1FF;
+    height: 100px;
+    background-color: #b8d1ff;
   }
-  25%, 50% {
+  25%,
+  50% {
     width: 300px;
     height: 300px;
+    font-size: 40px;
   }
   75% {
     width: 100px;
-    height: 100px; 
+    height: 100px;
+    font-size: 16px;
   }
   100% {
     width: 100px;
-    height: 100px; 
-    background-color: #6495ED;
+    height: 100px;
+    background-color: #6495ed;
+  }
+}
+
+@keyframes inhale {
+  25% {
+    opacity: 1;
+  }
+  50%,
+  75%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hold {
+  0%,
+  25%,
+  75% {
+    opacity: 0;
+  }
+  50%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes exhale {
+  0%,
+  25%,
+  50%,
+  100% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
   }
 }
