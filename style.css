@@ -8,8 +8,8 @@
   justify-content: center;
 }
 
-.breathe-in {
-  animation-name: inhale;
+.breathing {
+  animation-name: breathe;
   animation-duration: 16s;
   animation-timing-function: linear; 
   animation-direction: normal;
@@ -18,9 +18,8 @@
   animation-play-state: running;
 }
 
-.breathe-out {}
 
-@keyframes inhale {
+@keyframes breathe {
   0% {
     width: 100px;
     height: 100px; 
