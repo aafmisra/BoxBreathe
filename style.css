@@ -7,9 +7,9 @@
 
 .breathe-in {
   animation-name: inhale;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-delay: 2s;
-  animation-timing-function: ease-out; 
+  animation-timing-function: linear; 
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-fill-mode: none;
