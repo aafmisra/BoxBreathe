@@ -6,12 +6,30 @@ body {
   letter-spacing: .2em;
 }
 
+html, body {
+  height: 100%;
+}
+
 h1 {
   margin: 20px;
 }
 
-p {
+main {
+    flex: 1 0 auto;
+}
+
+div p {
     margin: 5px 0;
+}
+
+footer {
+    font-size: .8em;
+    flex-shrink: 0;
+    margin: 20px 0;
+}
+
+footer a {
+    color: black;
 }
 
 .breath {
@@ -24,7 +42,7 @@ p {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  color: #fff
+  color: #fff;
 }
 
 .breathing {
